@@ -39,17 +39,10 @@ cd bin/
 # Dependence 
 glib2-devel(2.28.8)、libpcap-devel(1.4.0)、libnet-devel(1.1.6)
 
-# Install
-
-```
-git clone git@github.com:Qihoo360/mysql-sniffer.git
-cd mysql-sniffer
-mkdir proj
-cd proj
-cmake ../
-make
-cd bin/
-```
+cmake and make problem:
+libpthread.so.0: error adding symbols: DSO missing from command line
+solution:
+https://blog.csdn.net/HideInTime/article/details/102816323
 
 # More
 More MySQL Sniffer information, Atlas and some other technology please pay attention to our Hulk platform official account or QQ:104180820 
